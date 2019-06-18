@@ -18,19 +18,32 @@ main{
   background: rgb(246, 246, 239)
 }
 
-@media screen and (min-width: 750px){
-  main{
-    width: 85%;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-
 .header{
   display: flex;
   justify-content: space-between;
   background: #ff6600;
-  padding: 3px
+  padding: 3px;
+  margin: 0 auto;
+  width: 100%
+}
+
+.footer{
+  width: 100%;
+  background: rgb(246, 246, 239);
+  margin: 0 auto
+}
+
+@media screen and (min-width: 750px){
+  main{
+    width: 85%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .header,
+  .footer{
+    width: 85%;
+  }
 }
 
 .header__section{
